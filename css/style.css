@@ -193,3 +193,21 @@ footer {
     justify-content: center;
     align-items: flex-end;
 }
+
+@media only screen and (max-width: 620px){
+    
+    .container-card {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0 0 40px 40px;
+    }
+
+    form input {
+        width: 50vw;
+    }
+
+    form button {
+        width: 10vw;
+    }
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- js -->
+    <script src="js/script.js" defer></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <main>
+
+        <section class="container-card" id="container-card">
+
+            <div class="search-area">
+                <h1>Confira o clima da sua cidade:</h1>
+                <form>
+                    <input type="text" id="city" placeholder="Digite o nome da sua cidade">
+                    <button type="submit" id="search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="city-reference" id="city-reference">
+                <div class="container">
+                    <div class="city">Viena</div>
+                    <div class="city">Copenhague</div>
+                </div>
+                <div class="container">
+                    <div class="city">zurich</div>
+                    <div class="city">Vancouver</div>
+                </div>
+                <div class="container">
+                    <div class="city">Genebra</div>
+                    <div class="city">Frankfurt</div>
+                </div>
+                <div class="container">
+                    <div class="city">Osaka</div>
+                    <div class="city">Maceió</div>
+                </div>
+            </div>
+
+            <!-- <img src="https://countryflagsapi.com/png/af" alt="Afghanistan flag" crossorigin="anonymous" class="teste"/> -->
+
+            <!-- <div class="weather-info">
+                
+                <div class="city-info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Florianópolis</span>
+                    <img src="https://countryflagsapi.com/png/br" alt="flag">
+                </div>
+                
+                <h2 class="temp">16 ºC</h2>
+                
+                <div class="description">
+                        <span>Nublado</span>
+                        <img src="http://openweathermap.org/img/w/02d.png" alt="Weather icon">
+                </div>
+                
+                <div class="info">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>83%</span>
+                    </div>
+                    <div class="line-info"></div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>2.57Km/h</span>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <div class="error hide" id="error">
+                Cidade informada não existe em nosso Banco de dados!</br>
+                Por favor informe uma nova cidade.
+            </div>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
